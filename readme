@@ -1,0 +1,28 @@
+# CyberJournal
+
+A free, open-source cybersecurity learning resource built for students. Structured knowledge, clear explanations, no paywalls.
+
+## What This Is
+
+CyberJournal covers 12 areas of cybersecurity — from fundamentals to malware analysis — with articles organized by category and subcategory for easy navigation. Built by a first-year CS student in the Netherlands who wanted a better way to learn.
+
+## Categories
+
+- Fundamentals
+- Network Security
+- Red Team
+- Blue Team
+- App & Web Security
+- Cryptography
+- Identity & Access Management (IAM)
+- Cloud Security
+- Governance, Risk & Compliance (GRC)
+- Forensics
+- Malware Analysis
+- Incidents
+
+## Built With
+
+- [Eleventy](https://www.11ty.dev/) — static site generator
+- Plain HTML, CSS, and JavaScript
+- Terminal-style code blocks with copy functionality
