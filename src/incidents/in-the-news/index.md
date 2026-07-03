@@ -2,5 +2,6 @@
 title: in the news
 layout: layouts/subcategory.njk
 parent: incidents
-parentName: Incidents
+parentName: incidents
+subcategory: in-the-news
 ---

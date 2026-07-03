@@ -1,10 +1,28 @@
 ---
 layout: layouts/base.njk
+pagination:
+  data: collections.articles
+  size: 1
+  alias: article
 ---
 
 <h1>{{ title }}</h1>
 <p class="subcategory-parent">Part of <a href="/{{ parent }}">{{ parentName }}</a></p>
 
-<div class="empty-state">
-  <p>Nothing here yet. Articles are on the way.</p>
-</div>
+{% set subcategoryArticles = collections.articles | filterByPath(parent + "/" + subcategory) %}
+{% if subcategoryArticles.length > 0 %}
+  <ul class="article-list">
+    {% for article in subcategoryArticles %}
+      <li>
+        <a href="{{ article.url }}">{{ article.data.title }}</a>
+        {% if article.data.description %}
+          <p class="article-desc">{{ article.data.description }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <div class="empty-state">
+    <p>Nothing here yet. Articles are on the way.</p>
+  </div>
+{% endif %}

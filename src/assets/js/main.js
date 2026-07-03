@@ -16,3 +16,21 @@ toggle.addEventListener('click', () => {
     html.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
 });
+
+//code blocks
+document.querySelectorAll('.code-block').forEach(block => {
+    const button = block.querySelector('.copy-btn');
+    if (!button) return;
+
+    button.addEventListener('click', () => {
+        const code = block.querySelector('code').innerText;
+        navigator.clipboard.writeText(code).then(() => {
+            button.textContent = 'Copied!';
+            button.classList.add('copied');
+            setTimeout(() => {
+                button.textContent = 'Copy';
+                button.classList.remove('copied');
+            }, 2000);
+        });
+    });
+});

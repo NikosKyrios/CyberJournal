@@ -346,3 +346,113 @@ main ul li a:hover {
   color: var(--text-secondary);
   font-style: italic;
 }
+
+/* ===== Code Blocks ===== */
+.code-block {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border);
+}
+
+.code-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.code-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.code-dots span:nth-child(1) { background-color: #ff5f56; }
+.code-dots span:nth-child(2) { background-color: #ffbd2e; }
+.code-dots span:nth-child(3) { background-color: #27c93f; }
+
+.code-lang {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.copy-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  font-family: var(--font-body);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.copy-btn:hover {
+  border-color: var(--accent-purple);
+  color: var(--accent-soft);
+}
+
+.copy-btn.copied {
+  border-color: #27c93f;
+  color: #27c93f;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+/* Articles */
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+
+.article-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-list li:last-child {
+  border-bottom: none;
+}
+
+.article-list li a {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.article-list li a:hover {
+  color: var(--accent-soft);
+  text-decoration: none;
+}
+
+.article-desc {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}

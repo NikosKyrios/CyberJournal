@@ -2,5 +2,6 @@
 title: symmetric encryption
 layout: layouts/subcategory.njk
 parent: cryptography
-parentName: Cryptography
+parentName: cryptography
+subcategory: symmetric-encryption
 ---
