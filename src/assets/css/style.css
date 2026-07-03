@@ -265,7 +265,7 @@ main ul li a:hover {
 /*  Footer  */
 .footer {
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   color: var(--text-secondary);
   font-size: 0.85rem;
   border-top: 1px solid var(--border);
