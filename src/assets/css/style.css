@@ -97,31 +97,18 @@ nav {
     flex: 1;
     display: flex;
     justify-content: center;
-    overflow-x: auto;
-    margin: 0 1rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.0rem;
-  font-size: 0.78rem;
+  gap: 1.2rem;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--text-secondary);
   flex: 1;
   justify-content: center;
   flex-wrap: nowrap;
-}
-
-.dropdown span {
-  cursor: pointer;
-  transition: color var(--transition);
-  padding: 0.35rem 0.5rem;
-  white-space: nowrap;
-}
-
-.dropdown span:hover {
-  color: var(--accent-soft);
 }
 
 .theme-toggle {
@@ -145,6 +132,48 @@ main {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
+}
+
+/* ===== Category & About Page Content ===== */
+main h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+main h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent-soft);
+}
+
+main p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main ul li {
+  padding: 0.4rem 0;
+  color: var(--text-secondary);
+}
+
+main ul li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+main ul li a:hover {
+  color: var(--accent-soft);
+  text-decoration: none;
 }
 
 /*  Home Hero  */
@@ -260,4 +289,43 @@ main {
   .nav-links {
     display: none; 
   }
+}
+
+/*  Dropdown Menus */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0;
+  min-width: 220px;
+  z-index: 200;
+  list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgba(139, 126, 172, 0.1);
+  color: var(--accent-soft);
+  text-decoration: none;
 }

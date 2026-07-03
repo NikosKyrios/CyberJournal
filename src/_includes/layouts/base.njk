@@ -14,20 +14,135 @@
     <div class="nav-container">
       <a href="/" class="logo">CyberJournal</a>
       <nav>
-        <ul class="nav-links">
-          <li class="dropdown"><span>Fundamentals</span></li>
-          <li class="dropdown"><span>Network Security</span></li>
-          <li class="dropdown"><span>Red Team</span></li>
-          <li class="dropdown"><span>Blue Team</span></li>
-          <li class="dropdown"><span>App & Web Security</span></li>
-          <li class="dropdown"><span>Cryptography</span></li>
-          <li class="dropdown"><span>IAM</span></li>
-          <li class="dropdown"><span>Cloud Security</span></li>
-          <li class="dropdown"><span>GRC</span></li>
-          <li class="dropdown"><span>Forensics</span></li>
-          <li class="dropdown"><span>Malware Analysis</span></li>
-          <li class="dropdown"><span>Incidents</span></li>
-        </ul>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="/fundamentals">Fundamentals</a>
+          <ul class="dropdown-menu">
+            <li><a href="/fundamentals">Core Principles</a></li>
+            <li><a href="/fundamentals">Threat Landscape</a></li>
+            <li><a href="/fundamentals">Risk Management Basics</a></li>
+            <li><a href="/fundamentals">Security Controls</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/network-security">Network Security</a>
+          <ul class="dropdown-menu">
+            <li><a href="/network-security">Networking Foundations</a></li>
+            <li><a href="/network-security">Network Devices & Architecture</a></li>
+            <li><a href="/network-security">Network Attacks</a></li>
+            <li><a href="/network-security">Network Defenses</a></li>
+            <li><a href="/network-security">Traffic Analysis</a></li>
+            <li><a href="/network-security">Secure Protocols</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/red-team">Red Team</a>
+          <ul class="dropdown-menu">
+            <li><a href="/red-team">Reconnaissance & OSINT</a></li>
+            <li><a href="/red-team">Scanning & Enumeration</a></li>
+            <li><a href="/red-team">Exploitation Basics</a></li>
+            <li><a href="/red-team">Password Attacks</a></li>
+            <li><a href="/red-team">Web Application Attacks</a></li>
+            <li><a href="/red-team">Social Engineering</a></li>
+            <li><a href="/red-team">Post-Exploitation</a></li>
+            <li><a href="/red-team">Red Team Operations</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/blue-team">Blue Team</a>
+          <ul class="dropdown-menu">
+            <li><a href="/blue-team">SOC Fundamentals</a></li>
+            <li><a href="/blue-team">Log Analysis & Correlation</a></li>
+            <li><a href="/blue-team">SIEM & Detection Engineering</a></li>
+            <li><a href="/blue-team">Endpoint Security</a></li>
+            <li><a href="/blue-team">Incident Response</a></li>
+            <li><a href="/blue-team">Digital Forensics Basics</a></li>
+            <li><a href="/blue-team">Threat Hunting</a></li>
+            <li><a href="/blue-team">Malware Analysis Intro</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/app-web-security">App & Web Security</a>
+          <ul class="dropdown-menu">
+            <li><a href="/app-web-security">Web Architecture Basics</a></li>
+            <li><a href="/app-web-security">OWASP Top 10 Deep Dives</a></li>
+            <li><a href="/app-web-security">API Security</a></li>
+            <li><a href="/app-web-security">Secure Development Lifecycle</a></li>
+            <li><a href="/app-web-security">Common Vulnerabilities</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/cryptography">Cryptography</a>
+          <ul class="dropdown-menu">
+            <li><a href="/cryptography">Historical Ciphers</a></li>
+            <li><a href="/cryptography">Symmetric Encryption</a></li>
+            <li><a href="/cryptography">Asymmetric Encryption</a></li>
+            <li><a href="/cryptography">Hashing & Salting</a></li>
+            <li><a href="/cryptography">Digital Signatures & Certificates</a></li>
+            <li><a href="/cryptography">Cryptographic Attacks</a></li>
+            <li><a href="/cryptography">Applied Cryptography</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/iam">IAM</a>
+          <ul class="dropdown-menu">
+            <li><a href="/iam">Authentication Methods</a></li>
+            <li><a href="/iam">Authorization Models</a></li>
+            <li><a href="/iam">Directory Services</a></li>
+            <li><a href="/iam">Identity Federation & SSO</a></li>
+            <li><a href="/iam">Privileged Access Management</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/cloud-security">Cloud Security</a>
+          <ul class="dropdown-menu">
+            <li><a href="/cloud-security">Cloud Models & Shared Responsibility</a></li>
+            <li><a href="/cloud-security">AWS / Azure / GCP Security</a></li>
+            <li><a href="/cloud-security">Container & Kubernetes Security</a></li>
+            <li><a href="/cloud-security">Serverless Security</a></li>
+            <li><a href="/cloud-security">Cloud-Native Threats</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/grc">GRC</a>
+          <ul class="dropdown-menu">
+            <li><a href="/grc">Security Frameworks</a></li>
+            <li><a href="/grc">Regulatory Compliance</a></li>
+            <li><a href="/grc">Risk Assessment Methodologies</a></li>
+            <li><a href="/grc">Security Policies & Procedures</a></li>
+            <li><a href="/grc">Auditing & Assurance</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/forensics">Forensics</a>
+          <ul class="dropdown-menu">
+            <li><a href="/forensics">Digital Forensics Basics</a></li>
+            <li><a href="/forensics">Memory Forensics</a></li>
+            <li><a href="/forensics">Network Forensics</a></li>
+            <li><a href="/forensics">Disk Forensics</a></li>
+            <li><a href="/forensics">Timeline Analysis</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/malware-analysis">Malware Analysis</a>
+          <ul class="dropdown-menu">
+            <li><a href="/malware-analysis">Static Analysis</a></li>
+            <li><a href="/malware-analysis">Dynamic Analysis</a></li>
+            <li><a href="/malware-analysis">Reverse Engineering Basics</a></li>
+            <li><a href="/malware-analysis">Malware Classification</a></li>
+            <li><a href="/malware-analysis">YARA Rules</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/incidents">Incidents</a>
+          <ul class="dropdown-menu">
+            <li><a href="/incidents">Major Breaches</a></li>
+            <li><a href="/incidents">Threat Reports</a></li>
+            <li><a href="/incidents">In the News</a></li>
+            <li><a href="/incidents">Case Studies</a></li>
+          </ul>
+        </li>
+      </ul>
       </nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
     </div>
@@ -38,7 +153,7 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2026 CyberJournal</p>
+    <p>&copy; 2026 CyberJournal &middot; <a href="/about">About</a></p>
   </footer>
 
   <script src="/assets/js/main.js"></script>
