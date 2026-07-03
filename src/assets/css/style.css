@@ -329,3 +329,20 @@ main ul li a:hover {
   color: var(--accent-soft);
   text-decoration: none;
 }
+
+.subcategory-parent {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.subcategory-parent a {
+  color: var(--accent-soft);
+}
+
+.empty-state {
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--text-secondary);
+  font-style: italic;
+}
