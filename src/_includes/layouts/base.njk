@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | CyberNewspaper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">CyberNewspaper</a>
+      <nav>
+        <ul class="nav-links">
+          <li class="dropdown"><span>Fundamentals</span></li>
+          <li class="dropdown"><span>Network Security</span></li>
+          <li class="dropdown"><span>Red Team</span></li>
+          <li class="dropdown"><span>Blue Team</span></li>
+          <li class="dropdown"><span>App & Web Security</span></li>
+          <li class="dropdown"><span>Cryptography</span></li>
+          <li class="dropdown"><span>IAM</span></li>
+          <li class="dropdown"><span>Cloud Security</span></li>
+          <li class="dropdown"><span>GRC</span></li>
+          <li class="dropdown"><span>Forensics</span></li>
+          <li class="dropdown"><span>Malware Analysis</span></li>
+          <li class="dropdown"><span>Incidents</span></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 CyberNewspaper</p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
