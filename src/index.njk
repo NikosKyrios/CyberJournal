@@ -1,0 +1,39 @@
+---
+title: Home
+layout: layouts/base.njk
+---
+
+<section class="home-hero">
+  {% set latest = collections.latest | first %}
+  {% if latest %}
+  <div class="hero-card">
+    <span class="hero-tag">Latest</span>
+    <h1>{{ latest.data.title }}</h1>
+    {% if latest.data.description %}
+    <p>{{ latest.data.description }}</p>
+    {% endif %}
+    <a href="{{ latest.url }}" class="hero-link">Read more →</a>
+  </div>
+  {% else %}
+  <div class="hero-card">
+    <span class="hero-tag">Latest</span>
+    <h1>Coming Soon</h1>
+    <p>Our first article is in the works. Stay tuned.</p>
+  </div>
+  {% endif %}
+</section>
+
+<section class="home-grid">
+  {% for article in collections.latest %}
+    {% if not loop.first %}
+    <article class="post-card">
+      <span class="card-tag">Article</span>
+      <h2>{{ article.data.title }}</h2>
+      {% if article.data.description %}
+      <p>{{ article.data.description }}</p>
+      {% endif %}
+      <a href="{{ article.url }}">Read more →</a>
+    </article>
+    {% endif %}
+  {% endfor %}
+</section>

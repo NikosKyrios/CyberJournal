@@ -14,6 +14,17 @@ module.exports = function(eleventyConfig) {
         });
     });
 
+    //articles sorted by date
+    eleventyConfig.addCollection("latest", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("src/**/*.md")
+        .filter(item => {
+            const path = item.filePathStem;
+            return !path.endsWith("/index") && path !== "/index" && path !== "/about" && path !=="/glossary";
+        })
+        .sort((a, b) => b.date - a.date)
+        .slice(0, 3);
+    }); 
+
     return {
         dir: {
             input: "src",

@@ -1,6 +1,7 @@
 ---
 title: Common Ports and Protocols — What's Running on Your Machine Right Now?
 description: Learn ports by seeing them live on your own system.
+date: 2026-07-04
 layout: layouts/base.njk
 ---
 
