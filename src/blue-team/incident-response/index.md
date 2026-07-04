@@ -1,7 +1,7 @@
 ---
-title: incident response
+title: Incident response
 layout: layouts/subcategory.njk
 parent: blue-team
-parentName: ulue team
+parentName: blue team
 subcategory: incident-response
 ---

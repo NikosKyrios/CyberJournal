@@ -1,5 +1,5 @@
 ---
-title: regulatory compliance
+title: Regulatory compliance
 layout: layouts/subcategory.njk
 parent: grc
 parentName: grc

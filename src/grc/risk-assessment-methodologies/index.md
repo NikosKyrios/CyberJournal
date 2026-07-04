@@ -1,5 +1,5 @@
 ---
-title: risk assessment methodologies
+title: Risk assessment methodologies
 layout: layouts/subcategory.njk
 parent: grc
 parentName: grc

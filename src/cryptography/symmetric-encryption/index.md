@@ -1,5 +1,5 @@
 ---
-title: symmetric encryption
+title: Symmetric encryption
 layout: layouts/subcategory.njk
 parent: cryptography
 parentName: cryptography

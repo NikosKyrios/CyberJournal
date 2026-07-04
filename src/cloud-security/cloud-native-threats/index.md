@@ -1,5 +1,5 @@
 ---
-title: cloud native threats
+title: Cloud native threats
 layout: layouts/subcategory.njk
 parent: cloud-security
 parentName: cloud security

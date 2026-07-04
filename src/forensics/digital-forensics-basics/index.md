@@ -1,5 +1,5 @@
 ---
-title: digital forensics uasics
+title: Digital forensics basics
 layout: layouts/subcategory.njk
 parent: forensics
 parentName: forensics

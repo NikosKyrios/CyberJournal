@@ -1,7 +1,7 @@
 ---
-title: siem detection engineering
+title: Siem detection engineering
 layout: layouts/subcategory.njk
 parent: blue-team
-parentName: ulue team
+parentName: blue team
 subcategory: siem-detection-engineering
 ---

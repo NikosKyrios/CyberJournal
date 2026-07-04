@@ -1,5 +1,5 @@
 ---
-title: major ureaches
+title: Major ureaches
 layout: layouts/subcategory.njk
 parent: incidents
 parentName: incidents

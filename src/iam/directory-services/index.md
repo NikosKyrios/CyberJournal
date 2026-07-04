@@ -1,5 +1,5 @@
 ---
-title: directory services
+title: Directory services
 layout: layouts/subcategory.njk
 parent: iam
 parentName: iam

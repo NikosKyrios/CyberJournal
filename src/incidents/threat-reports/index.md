@@ -1,5 +1,5 @@
 ---
-title: threat reports
+title: Threat reports
 layout: layouts/subcategory.njk
 parent: incidents
 parentName: incidents

@@ -1,7 +1,7 @@
 ---
-title: secure development lifecycle
+title: Secure development lifecycle
 layout: layouts/subcategory.njk
 parent: app-web-security
-parentName: app weu security
+parentName: app & web security
 subcategory: secure-development-lifecycle
 ---

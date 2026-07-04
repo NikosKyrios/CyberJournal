@@ -1,5 +1,5 @@
 ---
-title: red team operations
+title: Red team operations
 layout: layouts/subcategory.njk
 parent: red-team
 parentName: red team

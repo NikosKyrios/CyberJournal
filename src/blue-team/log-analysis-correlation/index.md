@@ -1,7 +1,7 @@
 ---
-title: log analysis correlation
+title: Log analysis correlation
 layout: layouts/subcategory.njk
 parent: blue-team
-parentName: ulue team
+parentName: blue team
 subcategory: log-analysis-correlation
 ---

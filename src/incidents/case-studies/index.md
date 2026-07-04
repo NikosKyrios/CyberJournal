@@ -1,5 +1,5 @@
 ---
-title: case studies
+title: Case studies
 layout: layouts/subcategory.njk
 parent: incidents
 parentName: incidents

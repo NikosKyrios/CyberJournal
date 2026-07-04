@@ -1,5 +1,5 @@
 ---
-title: cloud models shared responsiuility
+title: Cloud models shared responsiuility
 layout: layouts/subcategory.njk
 parent: cloud-security
 parentName: cloud security

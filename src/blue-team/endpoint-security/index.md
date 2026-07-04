@@ -1,7 +1,7 @@
 ---
-title: endpoint security
+title: Endpoint security
 layout: layouts/subcategory.njk
 parent: blue-team
-parentName: ulue team
+parentName: blue team
 subcategory: endpoint-security
 ---

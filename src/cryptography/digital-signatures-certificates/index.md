@@ -1,5 +1,5 @@
 ---
-title: digital signatures certificates
+title: Digital signatures certificates
 layout: layouts/subcategory.njk
 parent: cryptography
 parentName: cryptography

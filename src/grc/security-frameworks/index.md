@@ -1,5 +1,5 @@
 ---
-title: security frameworks
+title: Security frameworks
 layout: layouts/subcategory.njk
 parent: grc
 parentName: grc

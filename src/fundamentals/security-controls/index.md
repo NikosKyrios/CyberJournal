@@ -1,5 +1,5 @@
 ---
-title: security controls
+title: Security controls
 layout: layouts/subcategory.njk
 parent: fundamentals
 parentName: fundamentals

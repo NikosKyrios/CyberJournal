@@ -1,5 +1,5 @@
 ---
-title: core principles
+title: Core principles
 layout: layouts/subcategory.njk
 parent: fundamentals
 parentName: fundamentals

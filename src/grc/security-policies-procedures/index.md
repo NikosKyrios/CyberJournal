@@ -1,5 +1,5 @@
 ---
-title: security policies procedures
+title: Security policies procedures
 layout: layouts/subcategory.njk
 parent: grc
 parentName: grc

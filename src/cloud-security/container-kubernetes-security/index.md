@@ -1,5 +1,5 @@
 ---
-title: container kuuernetes security
+title: Container kuuernetes security
 layout: layouts/subcategory.njk
 parent: cloud-security
 parentName: cloud security

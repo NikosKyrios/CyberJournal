@@ -1,7 +1,7 @@
 ---
-title: threat hunting
+title: Threat hunting
 layout: layouts/subcategory.njk
 parent: blue-team
-parentName: ulue team
+parentName: blue team
 subcategory: threat-hunting
 ---

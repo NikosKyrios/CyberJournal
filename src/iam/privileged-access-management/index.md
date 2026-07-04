@@ -1,5 +1,5 @@
 ---
-title: privileged access management
+title: Privileged access management
 layout: layouts/subcategory.njk
 parent: iam
 parentName: iam

@@ -1,5 +1,5 @@
 ---
-title: applied cryptography
+title: Applied cryptography
 layout: layouts/subcategory.njk
 parent: cryptography
 parentName: cryptography

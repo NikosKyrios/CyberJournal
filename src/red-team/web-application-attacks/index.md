@@ -1,5 +1,5 @@
 ---
-title: weu application attacks
+title: Web application attacks
 layout: layouts/subcategory.njk
 parent: red-team
 parentName: red team
