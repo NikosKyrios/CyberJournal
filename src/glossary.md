@@ -5,4 +5,6 @@ layout: layouts/base.njk
 
 # Glossary
 
-Coming soon.
+Click any term for a definition.
+
+<div id="glossary-list"></div>

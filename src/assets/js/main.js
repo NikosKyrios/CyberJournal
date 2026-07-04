@@ -91,3 +91,19 @@ document.querySelectorAll('.os-tabs').forEach(tabGroup => {
 
     if (tabs.length > 0) tabs[0].click();
 });
+
+//glossary page
+const glossaryList = document.getElementById('glossary-list');
+if (glossaryList) {
+    fetch('/assets/data/glossary.json')
+    .then(res => res.json())
+    .then(data => {
+        const terms = Object.values(data).sort((a, b) => a.term.localeCompare(b.term));
+        glossaryList.innerHTML = terms.map(entry => 
+            '<div class="glossary-entry">' +
+                '<h3>' + entry.term + '</h3>' +
+                '<p>' + entry.definition + '</p>' +
+            '</div>'
+        ).join('');
+    });
+}
