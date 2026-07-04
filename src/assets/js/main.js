@@ -41,27 +41,59 @@ document.querySelectorAll('.glossary-term').forEach(term => {
     if (!key) return;
     let tooltip = null;
 
-    term.addEventListener('mouseenter', async () => {
+    function showTooltip() {
         if (!window.glossaryData) {
-            const res = await fetch('/assets/data/glossary.json');
-            window.glossaryData = await res.json();
+            fetch('/assets/data/glossary.json')
+            .then(res => res.json())
+            .then(data => {
+                window.glossaryData = data;
+                buildTooltip();
+            });
         }
+        else {
+            buildTooltip();
+        }
+    }
 
+    function buildTooltip() {
         const entry = window.glossaryData[key];
         if (!entry) return;
 
+        if (tooltip) tooltip.remove();
+
         tooltip = document.createElement('div');
         tooltip.className = 'glossary-tooltip visible';
-        tooltip.innerHTML = '<div class="tooltip-term">' + entry.term + '</div> <div class="tooltip-def">' +  entry.definition + '</div>';
-
+        tooltip.innerHTML = '<div class="tooltip-term">' + entry.term + '</div><div class="tooltip-def">' + entry.definition + '</div>';
         term.appendChild(tooltip);
-    });
-    term.addEventListener('mouseleave', () => {
+    }
+    function hideTooltip() {
         if (tooltip) {
             tooltip.remove();
             tooltip = null;
         }
-    })
+    }
+
+    // Desktop: hover
+    term.addEventListener('mouseenter', showTooltip);
+    term.addEventListener('mouseleave', hideTooltip);
+
+    // Mobile: tap
+    term.addEventListener('click', function(e) {
+        if (tooltip) {
+            hideTooltip();
+        } else {
+            e.preventDefault();
+            showTooltip();
+        }
+    });
+});
+
+// Close tooltip when tapping elsewhere
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.glossary-term')) {
+        const tooltips = document.querySelectorAll('.glossary-tooltip');
+        tooltips.forEach(t => t.remove());
+    }
 });
 
 //OS Tabs
