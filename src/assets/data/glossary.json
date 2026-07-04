@@ -1,0 +1,58 @@
+{
+  "protocol": {
+    "term": "Protocol",
+    "definition": "An agreed-upon set of rules for how computers talk to each other. Like a handshake means \"hello.\""
+  },
+  "tcp": {
+    "term": "TCP",
+    "definition": "Transmission Control Protocol. A protocol that guarantees data arrives complete and in order. Like a courier who gets a signature. Slower but reliable."
+  },
+  "udp": {
+    "term": "UDP",
+    "definition": "User Datagram Protocol. A protocol that sends data as fast as possible with no checks. Like throwing paper airplanes over a fence. Fast but some might not make it."
+  },
+  "ssh": {
+    "term": "SSH",
+    "definition": "Secure Shell. A way to securely control another computer through text commands. Encrypted from end to end."
+  },
+  "http": {
+    "term": "HTTP",
+    "definition": "HyperText Transfer Protocol. The protocol your browser uses to load websites. Not encrypted — anyone on the same network can see what you're browsing."
+  },
+  "https": {
+    "term": "HTTPS",
+    "definition": "HTTP wrapped in encryption (TLS). Snoopers see gibberish instead of your passwords or credit card numbers."
+  },
+  "ip-address": {
+    "term": "IP Address",
+    "definition": "Your computer's unique home address on the internet. Data gets sent to this address like mail to a house."
+  },
+  "localhost": {
+    "term": "localhost",
+    "definition": "Your own computer, and only yours. When a program listens on localhost, nobody else on the network can reach it."
+  },
+  "port": {
+    "term": "Port",
+    "definition": "A specific door on your computer for a specific program. Port 80 is the door for web traffic, port 22 is the door for SSH."
+  },
+  "dns": {
+    "term": "DNS",
+    "definition": "Domain Name System. The internet's phonebook. You type \"google.com\", DNS looks up the actual IP address so your browser knows where to go."
+  },
+  "brute-force": {
+    "term": "Brute-force Attack",
+    "definition": "Guessing passwords over and over really fast until one works. Like trying every key on a keyring until the door opens."
+  },
+  "firewall": {
+    "term": "Firewall",
+    "definition": "A filter between your computer and the internet. It decides which ports are open and which stay locked shut."
+  },
+  "nmap": {
+    "term": "Nmap",
+    "definition": "Network Mapper. The industry-standard tool for scanning which ports are open on a machine. Used by both defenders and attackers."
+  },
+  "rdp": {
+    "term": "RDP",
+    "definition": "Remote Desktop Protocol. Lets you control a Windows computer from far away as if you were sitting in front of it. A massive target for attackers — never expose port 3389 to the internet."
+  }
+}

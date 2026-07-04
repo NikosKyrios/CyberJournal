@@ -5,7 +5,8 @@ layout: layouts/base.njk
 
 # Fundamentals
 
-- Core Principles
-- Threat Landscape
-- Risk Management Basics
-- Security Controls
+- [Core Principles](/fundamentals/core-principles)
+- [Threat Landscape](/fundamentals/threat-landscape)
+- [Risk Management Basics](/fundamentals/risk-management-basics)
+- [Security Controls](/fundamentals/security-controls)
+- [Networking Basics](/fundamentals/networking)
