@@ -54,5 +54,21 @@
   "rdp": {
     "term": "RDP",
     "definition": "Remote Desktop Protocol. Lets you control a Windows computer from far away as if you were sitting in front of it. A massive target for attackers — never expose port 3389 to the internet."
+  },
+  "red-team": {
+    "term": "Red Team",
+    "definition": "Security professionals who simulate real attacks to find weaknesses before criminals do. Think like an attacker, act with permission."
+  },
+  "blue-team": {
+    "term": "Blue Team",
+    "definition": "Security professionals who defend systems. They monitor networks, detect threats, respond to incidents, and harden systems against attacks."
+  },
+  "ethical-hacker": {
+    "term": "Ethical Hacker",
+    "definition": "Someone who uses hacking skills with permission to find and fix security weaknesses. Same techniques as criminals, but legally and to help, not harm."
+  },
+  "penetration-tester": {
+    "term": "Penetration Tester",
+    "definition": "A professional hired to break into a specific system and report how they did it. Often called a 'pentester.' They're the practical, hands-on side of ethical hacking."
   }
 }
