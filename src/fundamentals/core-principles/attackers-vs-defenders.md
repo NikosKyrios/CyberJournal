@@ -8,7 +8,7 @@ layout: layouts/base.njk
 ## The Two Mindsets
 
 - <span class="glossary-term" data-term="red-team">Red Team</span> thinks: *"How would I break this system?"* They mimic attackers to find vulnerabilities before real criminals do.
-- <span class="glossary-term" data-term="blue-team">Blue Team</span> thinks: *"How dod I stop the attackers?"* They defend systems, monitor threats, and respond to incidents.
+- <span class="glossary-term" data-term="blue-team">Blue Team</span> thinks: *"How do I stop the attackers?"* They defend systems, monitor threats, and respond to incidents.
 
 Same skills, opposite goals.
 
@@ -64,8 +64,8 @@ In 2013, attackers stole 40 million credit card numbers from Target. Here's both
 
 **What the defenders missed:** The HVAC contractor had more access than they needed. The payment systems weren't properly <span class="glossary-term" data-term="firewall">firewall</span>-separated from the rest of the network. Alerts from the security software were flagged but nobody investigated them in time.
 
-The attackers didn't use anything fance. They just found open doors.
+The attackers didn't use anything fancy. They just found open doors.
 
 ## Why Both Sides Matter
 
-You can't defend agains what you don't understand. Every great defender knows how to attack. Every responsible attacker (<span class="glossary-term" data-term="ethical-hacker">ethical hacker</span>, <span class="glossary-term" data-term="penetration-tester">penetration tester</span>) works to improve defense.
+You can't defend against what you don't understand. Every great defender knows how to attack. Every responsible attacker (<span class="glossary-term" data-term="ethical-hacker">ethical hacker</span>, <span class="glossary-term" data-term="penetration-tester">penetration tester</span>) works to improve defense.
