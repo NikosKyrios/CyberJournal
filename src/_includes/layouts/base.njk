@@ -13,16 +13,25 @@
 <header class="navbar">
   <div class="nav-container">
     <a href="/" class="logo">CyberJournal</a>
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search articles.." autocomplete="off">
+      <div id="searchResults" class="search-results"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <nav id="navMenu">
-      <ul class="nav-links">
-        <li class="dropdown">
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <ul class="sidebar-nav">
+        <li class="sidebar-category">
           <a href="/fundamentals">Fundamentals</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/fundamentals/core-principles">Core Principles</a></li>
             <li><a href="/fundamentals/threat-landscape">Threat Landscape</a></li>
             <li><a href="/fundamentals/risk-management-basics">Risk Management Basics</a></li>
@@ -30,9 +39,9 @@
             <li><a href="/fundamentals/networking">Networking Basics</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/network-security">Network Security</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/network-security/networking-foundations">Networking Foundations</a></li>
             <li><a href="/network-security/network-devices-architecture">Network Devices & Architecture</a></li>
             <li><a href="/network-security/network-attacks">Network Attacks</a></li>
@@ -41,9 +50,9 @@
             <li><a href="/network-security/secure-protocols">Secure Protocols</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/red-team">Red Team</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/red-team/reconnaissance-osint">Reconnaissance & OSINT</a></li>
             <li><a href="/red-team/scanning-enumeration">Scanning & Enumeration</a></li>
             <li><a href="/red-team/exploitation-basics">Exploitation Basics</a></li>
@@ -54,9 +63,9 @@
             <li><a href="/red-team/red-team-operations">Red Team Operations</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/blue-team">Blue Team</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/blue-team/soc-fundamentals">SOC Fundamentals</a></li>
             <li><a href="/blue-team/log-analysis-correlation">Log Analysis & Correlation</a></li>
             <li><a href="/blue-team/siem-detection-engineering">SIEM & Detection Engineering</a></li>
@@ -67,9 +76,9 @@
             <li><a href="/blue-team/malware-analysis-intro">Malware Analysis Intro</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/app-web-security">App & Web Security</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/app-web-security/web-architecture-basics">Web Architecture Basics</a></li>
             <li><a href="/app-web-security/owasp-top-10">OWASP Top 10 Deep Dives</a></li>
             <li><a href="/app-web-security/api-security">API Security</a></li>
@@ -77,9 +86,9 @@
             <li><a href="/app-web-security/common-vulnerabilities">Common Vulnerabilities</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/cryptography">Cryptography</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/cryptography/historical-ciphers">Historical Ciphers</a></li>
             <li><a href="/cryptography/symmetric-encryption">Symmetric Encryption</a></li>
             <li><a href="/cryptography/asymmetric-encryption">Asymmetric Encryption</a></li>
@@ -89,9 +98,9 @@
             <li><a href="/cryptography/applied-cryptography">Applied Cryptography</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/iam">IAM</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/iam/authentication-methods">Authentication Methods</a></li>
             <li><a href="/iam/authorization-models">Authorization Models</a></li>
             <li><a href="/iam/directory-services">Directory Services</a></li>
@@ -99,9 +108,9 @@
             <li><a href="/iam/privileged-access-management">Privileged Access Management</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/cloud-security">Cloud Security</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/cloud-security/cloud-models-shared-responsibility">Cloud Models & Shared Responsibility</a></li>
             <li><a href="/cloud-security/aws-azure-gcp-security">AWS / Azure / GCP Security</a></li>
             <li><a href="/cloud-security/container-kubernetes-security">Container & Kubernetes Security</a></li>
@@ -109,9 +118,9 @@
             <li><a href="/cloud-security/cloud-native-threats">Cloud-Native Threats</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/grc">GRC</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/grc/security-frameworks">Security Frameworks</a></li>
             <li><a href="/grc/regulatory-compliance">Regulatory Compliance</a></li>
             <li><a href="/grc/risk-assessment-methodologies">Risk Assessment Methodologies</a></li>
@@ -119,9 +128,9 @@
             <li><a href="/grc/auditing-assurance">Auditing & Assurance</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/forensics">Forensics</a>
-          <ul class="dropdown-menu">
+        <ul class="sidebar-subnav">
             <li><a href="/forensics/digital-forensics-basics">Digital Forensics Basics</a></li>
             <li><a href="/forensics/memory-forensics">Memory Forensics</a></li>
             <li><a href="/forensics/network-forensics">Network Forensics</a></li>
@@ -129,9 +138,9 @@
             <li><a href="/forensics/timeline-analysis">Timeline Analysis</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/malware-analysis">Malware Analysis</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/malware-analysis/static-analysis">Static Analysis</a></li>
             <li><a href="/malware-analysis/dynamic-analysis">Dynamic Analysis</a></li>
             <li><a href="/malware-analysis/reverse-engineering-basics">Reverse Engineering Basics</a></li>
@@ -139,9 +148,9 @@
             <li><a href="/malware-analysis/yara-rules">YARA Rules</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="sidebar-category">
           <a href="/incidents">Incidents</a>
-          <ul class="dropdown-menu">
+          <ul class="sidebar-subnav">
             <li><a href="/incidents/major-breaches">Major Breaches</a></li>
             <li><a href="/incidents/threat-reports">Threat Reports</a></li>
             <li><a href="/incidents/in-the-news">In the News</a></li>
@@ -150,13 +159,14 @@
         </li>
       </ul>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
-  </div>
-</header>
+</aside>
+
+<button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">▸</button>
 
   <main>
     {{ content | safe }}
   </main>
+</div>
 
   <footer class="footer">
     <p>&copy; 2026 CyberJournal &middot; <a href="/about">About</a> &middot; <a href="/glossary">Glossary</a></p>

@@ -159,3 +159,59 @@ dropdowns.forEach(dropdown => {
         }
     });
 });
+
+//Search
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+
+if (searchInput && searchResults) {
+    let articles = [];
+
+    fetch('/articles.json')
+        .then(res => res.json())
+        .then(data => {
+            articles = data;
+        });
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        if (query.length < 2) {
+            searchResults.classList.remove('visible');
+            searchResults.innerHTML = '';
+            return;
+        }
+
+        const matches = articles.filter(a => 
+            a.title.toLowerCase().includes(query) || a.description.toLowerCase().includes(query)
+        ).slice(0, 5);
+
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="search-result-empty">No articles found.</div>';
+        }
+        else {
+            searchResults.innerHTML = matches.map(a =>
+                '<a href="' + a.url + '" class="search-result-item">' +
+                '<div class="result-title">' + a.title + '</div>' +
+                '<div class="result-desc">' + a.description + '</div>' +
+                '</a>'  
+            ).join('');
+        }
+        searchResults.classList.add('visible');
+    });
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-wrapper')) {
+            searchResults.classList.remove('visible');
+        }
+    });
+}
+
+//Sidebar toggle
+const sidebarToggle = document.getElementById('sidebarToggle');
+const sidebar = document.getElementById('sidebar');
+
+if (sidebarToggle) {
+    sidebarToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+        sidebarToggle.textContent = sidebar.classList.contains('collapsed') ? '◂' : '▸';
+    });
+}

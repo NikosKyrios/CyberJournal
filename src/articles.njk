@@ -1,0 +1,13 @@
+---
+permalink: /articles.json
+eleventyExcludeFromCollection: true
+---
+[
+{% for article in collections.articles %}
+    {
+        "title": {{ article.data.title | dump | safe }},
+        "description": {{ article.data.description | dump | safe }},
+        "url": {{ article.url | dump | safe }}
+    }{% if not loop.last %},{% endif %}
+{% endfor %}
+]
