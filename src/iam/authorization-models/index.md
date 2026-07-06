@@ -2,6 +2,6 @@
 title: Authorization models
 layout: layouts/subcategory.njk
 parent: iam
-parentName: iam
+parentName: Iam
 subcategory: authorization-models
 ---

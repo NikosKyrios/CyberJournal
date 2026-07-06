@@ -2,6 +2,6 @@
 title: Core principles
 layout: layouts/subcategory.njk
 parent: fundamentals
-parentName: fundamentals
+parentName: Fundamentals
 subcategory: core-principles
 ---

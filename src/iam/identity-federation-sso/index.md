@@ -2,6 +2,6 @@
 title: Identity federation sso
 layout: layouts/subcategory.njk
 parent: iam
-parentName: iam
+parentName: Iam
 subcategory: identity-federation-sso
 ---

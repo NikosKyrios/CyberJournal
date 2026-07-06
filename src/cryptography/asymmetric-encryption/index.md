@@ -2,6 +2,6 @@
 title: Asymmetric encryption
 layout: layouts/subcategory.njk
 parent: cryptography
-parentName: cryptography
+parentName: Cryptography
 subcategory: asymmetric-encryption
 ---

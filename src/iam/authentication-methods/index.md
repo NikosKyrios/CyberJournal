@@ -2,6 +2,6 @@
 title: Authentication methods
 layout: layouts/subcategory.njk
 parent: iam
-parentName: iam
+parentName: Iam
 subcategory: authentication-methods
 ---

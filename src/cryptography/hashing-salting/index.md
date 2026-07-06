@@ -2,6 +2,6 @@
 title: Hashing salting
 layout: layouts/subcategory.njk
 parent: cryptography
-parentName: cryptography
+parentName: Cryptography
 subcategory: hashing-salting
 ---

@@ -2,6 +2,6 @@
 title: Network forensics
 layout: layouts/subcategory.njk
 parent: forensics
-parentName: forensics
+parentName: Forensics
 subcategory: network-forensics
 ---

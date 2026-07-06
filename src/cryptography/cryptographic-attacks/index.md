@@ -2,6 +2,6 @@
 title: Cryptographic attacks
 layout: layouts/subcategory.njk
 parent: cryptography
-parentName: cryptography
+parentName: Cryptography
 subcategory: cryptographic-attacks
 ---

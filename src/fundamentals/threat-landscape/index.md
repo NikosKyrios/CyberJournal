@@ -2,6 +2,6 @@
 title: Threat landscape
 layout: layouts/subcategory.njk
 parent: fundamentals
-parentName: fundamentals
+parentName: Fundamentals
 subcategory: threat-landscape
 ---

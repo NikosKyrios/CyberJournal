@@ -2,6 +2,6 @@
 title: Case studies
 layout: layouts/subcategory.njk
 parent: incidents
-parentName: incidents
+parentName: Incidents
 subcategory: case-studies
 ---

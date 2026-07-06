@@ -2,6 +2,6 @@
 title: Memory forensics
 layout: layouts/subcategory.njk
 parent: forensics
-parentName: forensics
+parentName: Forensics
 subcategory: memory-forensics
 ---
