@@ -164,6 +164,9 @@
 <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">▸</button>
 
   <main>
+    {% if title and title!= "Home" %}
+    <h1>{{ title }}</h1>
+    {% endif %}
     {{ content | safe }}
   </main>
 </div>
