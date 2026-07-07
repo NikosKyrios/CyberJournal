@@ -378,6 +378,15 @@ main ul li a:hover {
   text-decoration: none;
 }
 
+main ul:not(.sidebar-nav):not(.sidebar-subnav):not(.nav-links):not(.dropdown-menu):not(.article-list) {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+main ol {
+  padding-left: 1.5rem;
+}
+
 /*  Home Hero  */
 .home-hero {
   margin-bottom: 3rem;
