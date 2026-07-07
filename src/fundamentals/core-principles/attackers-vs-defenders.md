@@ -4,6 +4,7 @@ description: Understand Red and Blue team and why they use the same tools.
 date: 2026-07-05
 layout: layouts/base.njk
 ---
+# Attackers vs Defenders - The two Sides of Cybersecurity
 
 ## The Two Mindsets
 

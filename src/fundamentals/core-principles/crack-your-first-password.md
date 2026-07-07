@@ -5,6 +5,8 @@ date: 2026-07-07
 layout: layouts/base.njk
 ---
 
+# Crack Your First Password (Ethically) with Hashcat
+
 ## ⚠️ Read This First
 
 **Cracking passwords that aren't yours is illegal.** What you're about to do is only legal because you're cracking a hash you created yourself, on your own machine. Do not use these tools against anyone else's accounts, systems, or stolen password databases. Doing so is a criminal offense in most countries.

@@ -5,6 +5,8 @@ date: 2026-07-04
 layout: layouts/base.njk
 ---
 
+# Common Ports and Protocols — What's Running on Your Machine Right Now?
+
 ## What's a Port, Actually?
 
 Think of an <span class="glossary-term" data-term="ip-address">IP address</span> like an apartment building. The <span class="glossary-term" data-term="port">port</span> is the apartment number. Data needs both to reach the right application.
