@@ -62,29 +62,6 @@ Try it yourself with different inputs and watch the output change completely, ev
 echo -n "Hello" | sha256sum</code></pre>
 </div>
 
-Notice the two hashes are completely different, even though the inputs differ by just one capital letter. This is called the **avalanche effect** — a tiny change in input produces a massive change in output, making hashes unpredictable and secure.
-
-Here's a real example of what a hash looks like:
-
-<div class="code-block">
-  <div class="code-header">
-    <div class="code-dots"><span></span><span></span><span></span></div>
-    <span class="code-lang">bash</span>
-    <button class="copy-btn">Copy</button>
-  </div>
-  <pre><code>echo -n "iloveyou" | sha256sum</code></pre>
-</div>
-
-Output:
-
-<div class="code-block">
-  <div class="code-header">
-    <div class="code-dots"><span></span><span></span><span></span></div>
-    <span class="code-lang">output</span>
-    <button class="copy-btn">Copy</button>
-  </div>
-  <pre><code>6a0436eecdad379345d804a9e4861a46e2135054879760acaf85871b26deadbeef  -</code></pre>
-</div>
 
 ## How Attackers Crack Passwords
 
