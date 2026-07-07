@@ -205,13 +205,6 @@ Now try hashing something stronger and see what happens:
 hashcat -m 1400 -a 0 hash2.txt rockyou.txt</code></pre>
 </div>
 
-**What each part does:**
-
-- `echo -n "xk9#mP2zLq"` — prints the strong password without a trailing newline
-- `| sha256sum` — generates the SHA-256 hash
-- `| awk '{print $1}'` — extracts only the hash, discarding the filename
-- `> hash2.txt` — saves the hash to a new file called `hash2.txt`
-- `hashcat -m 1400 -a 0 hash2.txt rockyou.txt` — runs the same dictionary attack against the new hash
 
 Hashcat will run through the entire wordlist and find... nothing. The status will say **"Exhausted"** with **"Recovered: 0/1"** — meaning it tried every single word in rockyou.txt and none of them matched. That password isn't in the list. It would take a pure brute-force attack millions of years to crack it.
 
