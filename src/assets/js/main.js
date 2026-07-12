@@ -97,31 +97,46 @@ document.addEventListener('click', function(e) {
 });
 
 //OS Tabs
+
 document.querySelectorAll('.os-tabs').forEach(tabGroup => {
     const tabs = tabGroup.querySelectorAll('.os-tab');
-    const parent = tabGroup.parentElement;
+    const panelContainer = tabGroup.parentElement;
+    const allPanels = panelContainer.querySelectorAll(':scope > .os-panel');
 
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const os = tab.dataset.os;
+
+            // Deactivate all tabs
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            const allPanels = [];
-            let sibling = tabGroup.nextElementSibling;
-            while (sibling) {
-                if (sibling.classList.contains('os-panel')) {
-                    allPanels.push(sibling);
-                }
-                sibling = sibling.nextElementSibling;
+            // Find the index of this tab group among all tab groups
+            const allTabGroups = Array.from(panelContainer.querySelectorAll(':scope > .os-tabs'));
+            const groupIndex = allTabGroups.indexOf(tabGroup);
+            
+            // Collect panels that belong to this tab group
+            const tabGroupElements = [];
+            let current = tabGroup;
+            while (current) {
+                tabGroupElements.push(current);
+                current = current.nextElementSibling;
+                if (current && current.classList.contains('os-tabs')) break;
             }
-            allPanels.forEach(p => p.classList.remove('active'));
-            const panel = parent.querySelector(':scope > .os-panel[data-os="' + os + '"]');
+            
+            const groupPanels = tabGroupElements.filter(el => el.classList.contains('os-panel'));
+            
+            // Hide all panels in this group, then show the selected one
+            groupPanels.forEach(p => p.classList.remove('active'));
+            const panel = groupPanels.find(p => p.dataset.os === os);
             if (panel) panel.classList.add('active');
         });
     });
 
-    if (tabs.length > 0) tabs[0].click();
+    // Activate first tab
+    if (tabs.length > 0) {
+        tabs[0].click();
+    }
 });
 
 //glossary page
