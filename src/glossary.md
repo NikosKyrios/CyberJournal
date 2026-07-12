@@ -5,6 +5,6 @@ layout: layouts/base.njk
 
 # Glossary
 
-Click any term for a definition.
+<input type="text" id="glossarySearch" class="search-input glossary-search" placeholder="Search terms..." autocomplete="off">
 
 <div id="glossary-list"></div>

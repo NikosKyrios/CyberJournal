@@ -798,6 +798,11 @@ main code strong {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.glossary-search {
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
 /*  Responsive  */
 @media (max-width: 900px) {
   .sidebar {

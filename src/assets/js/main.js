@@ -141,18 +141,44 @@ document.querySelectorAll('.os-tabs').forEach(tabGroup => {
 
 //glossary page
 const glossaryList = document.getElementById('glossary-list');
+const glossarySearch = document.getElementById('glossarySearch');
 if (glossaryList) {
+    let allTerms = [];
     fetch('/assets/data/glossary.json')
     .then(res => res.json())
     .then(data => {
-        const terms = Object.values(data).sort((a, b) => a.term.localeCompare(b.term));
+        allTerms = Object.values(data).sort((a, b) => a.term.localeCompare(b.term));
+        renderGlossary(allTerms);
+    });
+
+    function renderGlossary(terms) {
+        if (terms.length === 0) {
+            glossaryList.innerHTML = '<p class="empty-state">No terms found.</p>';
+            return;
+        }
         glossaryList.innerHTML = terms.map(entry => 
             '<div class="glossary-entry">' +
                 '<h3>' + entry.term + '</h3>' +
                 '<p>' + entry.definition + '</p>' +
             '</div>'
         ).join('');
-    });
+    }
+
+    if (glossarySearch) {
+        glossarySearch.addEventListener('input', () => {
+            const query = glossarySearch.value.toLowerCase().trim();
+            if (query.length === 0) {
+                renderGlossary(allTerms);
+            }
+
+            else {
+                const filtered = allTerms.filter(t => 
+                    t.term.toLowerCase().includes(query) || t.definition.toLowerCase().includes(query)
+                );
+                renderGlossary(filtered)
+            }
+        });
+    }
 }
 
 //mobile menu
